@@ -10,7 +10,7 @@ namespace hfdp
     public:
         virtual void fly() const override
         {
-            std::cout << "I am flying with a rocket!" << std::endl;
+            std::cout << "I am flying with a rocket." << std::endl;
         }
     };
 }

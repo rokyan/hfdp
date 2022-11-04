@@ -10,7 +10,7 @@ namespace hfdp
     public:
         virtual void quack() const override
         {
-            std::cout << "Squeak!" << std::endl;
+            std::cout << "Squeak." << std::endl;
         }
     };
 }
