@@ -28,7 +28,7 @@ namespace hfdp
 
         void swim() const
         {
-            std::cout << "All ducks float, even decoys!" << std::endl;
+            std::cout << "All ducks float, even decoys." << std::endl;
         }
 
         virtual void display() const = 0;
