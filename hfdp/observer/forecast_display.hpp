@@ -6,21 +6,21 @@
 
 namespace hfdp
 {
-    class current_conditions_display : public observer, public display_element
+    class forecast_display : public observer, public display_element
     {
     public:
-        current_conditions_display(weather_data* data);
+        forecast_display(weather_data* data);
 
         virtual void update(double temperature, double humidity, double pressure);
 
         virtual void display() const;
 
-        ~current_conditions_display();
+        ~forecast_display();
 
     private:
         weather_data* data;
 
-        double temperature;
-        double humidity;
+        double current_pressure;
+        double last_pressure;
     };
 }
