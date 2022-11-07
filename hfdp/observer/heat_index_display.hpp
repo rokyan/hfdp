@@ -7,22 +7,21 @@
 namespace hfdp
 {
 
-class current_conditions_display final : public observer, public display_element
+class heat_index_display final : public observer, public display_element
 {
 public:
-    current_conditions_display(weather_data* data);
+    heat_index_display(weather_data* data);
 
     virtual void update(double temperature, double humidity, double pressure) override;
 
     virtual void display() const override;
 
-    ~current_conditions_display();
+private:
+    double compute_heat_index(double temperature, double humidity) const;
 
 private:
     weather_data* data;
-
-    double temperature;
-    double humidity;
+    double heat_index;
 };
 
 } // namespace hfdp
