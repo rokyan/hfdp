@@ -23,6 +23,7 @@ void current_conditions_display::update(double temperature, double humidity, dou
 void current_conditions_display::display() const
 {
     std::cout << "Current conditions: " << temperature << " C degrees and " << humidity << " humidity" << std::endl;
+    std::cout << "###" << std::endl;
 }
 
 current_conditions_display::~current_conditions_display()

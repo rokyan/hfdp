@@ -7,7 +7,9 @@ namespace hfdp
 heat_index_display::heat_index_display(weather_data* data)
     : data(data)
     , heat_index(.0)
-{}
+{
+    data->register_observer(this);
+}
 
 void heat_index_display::update(double temperature, double humidity, double pressure)
 {
@@ -19,6 +21,7 @@ void heat_index_display::update(double temperature, double humidity, double pres
 void heat_index_display::display() const
 {
     std::cout << "Heat index is " << heat_index << std::endl;
+    std::cout << "###" << std::endl;
 }
 
 double heat_index_display::compute_heat_index(double temperature, double humidity) const

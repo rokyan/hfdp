@@ -8,7 +8,9 @@ forecast_display::forecast_display(weather_data* data)
     : data(data)
     , current_pressure(30.0)
     , last_pressure(.0)
-{}
+{
+    data->register_observer(this);
+}
 
 void forecast_display::update(double temperature, double humidity, double pressure)
 {
@@ -34,6 +36,8 @@ void forecast_display::display() const
     {
         std::cout << "Watch out for cooler, rainy weather" << std::endl;
     }
+
+    std::cout << "###" << std::endl;
 }
 
 forecast_display::~forecast_display()
