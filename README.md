@@ -6,6 +6,7 @@ Examples from "Head First Design Patterns" - C++ version.
 * Encapsulate what varies.
 * Favor composition over inheritance.
 * Program to interfaces, not implementations.
+* Classes should be open for extension, but closed for modification.
 
 ## Patterns
 
