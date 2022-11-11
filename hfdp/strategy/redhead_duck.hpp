@@ -5,10 +5,10 @@
 namespace hfdp
 {
 
-class rubber_duck final : public duck
+class redhead_duck final : public duck
 {
 public:
-    rubber_duck();
+    redhead_duck();
 
     virtual void display() const override;
 };

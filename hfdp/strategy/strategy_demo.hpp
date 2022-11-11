@@ -3,11 +3,11 @@
 #include "../common/demo.hpp"
 #include "mallard_duck.hpp"
 #include "model_duck.hpp"
-#include "readhead_duck.hpp"
+#include "redhead_duck.hpp"
 #include "rubber_duck.hpp"
 #include "fly_rocket_powered.hpp"
+
 #include <iostream>
-#include <memory>
 
 namespace hfdp
 {
@@ -17,7 +17,7 @@ namespace hfdp
         virtual void run() const override
         {
             fly_and_quack(mallard_duck{});
-            fly_and_quack(readhead_duck{});
+            fly_and_quack(redhead_duck{});
             fly_and_quack(rubber_duck{});
 
             model_duck test_duck;
