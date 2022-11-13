@@ -1,52 +1,31 @@
 #pragma once
 
-#include "fly_behavior.hpp"
-#include "quack_behavior.hpp"
-#include <iostream>
-#include <utility>
+#include "FlyBehavior.hpp"
+#include "QuackBehavior.hpp"
+
 #include <memory>
 
 namespace hfdp
 {
-    class duck
+    class Duck
     {
     public:
-        duck(std::unique_ptr<fly_behavior> fly_behavior, std::unique_ptr<quack_behavior> quack_behavior)
-            : fly_behavior(std::move(fly_behavior))
-            , quack_behavior(std::move(quack_behavior))
-        {}
+        Duck(std::unique_ptr<FlyBehavior> fly_behavior, std::unique_ptr<QuackBehavior> quack_behavior);
 
-        void perform_fly() const
-        {
-            fly_behavior->fly();
-        }
+        void performFly() const;
+        void performQuack() const;
 
-        void perform_quack() const
-        {
-            quack_behavior->quack();
-        }
-
-        void swim() const
-        {
-            std::cout << "All ducks float, even decoys." << std::endl;
-        }
+        void swim() const;
 
         virtual void display() const = 0;
 
-        void set_fly_behavior(std::unique_ptr<fly_behavior> fly_behavior)
-        {
-            this->fly_behavior = std::move(fly_behavior);
-        }
+        void setFlyBehavior(std::unique_ptr<FlyBehavior> fly_behavior);
+        void setQuackBehavior(std::unique_ptr<QuackBehavior> quack_behavior);
 
-        void set_quack_behavior(std::unique_ptr<quack_behavior> quack_behavior)
-        {
-            this->quack_behavior = std::move(quack_behavior);
-        }
-
-        virtual ~duck() = default;
+        virtual ~Duck() = default;
 
     private:
-        std::unique_ptr<fly_behavior> fly_behavior;
-        std::unique_ptr<quack_behavior> quack_behavior;
+        std::unique_ptr<FlyBehavior> fly_behavior;
+        std::unique_ptr<QuackBehavior> quack_behavior;
     };
 }

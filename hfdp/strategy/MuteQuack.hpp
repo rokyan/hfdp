@@ -5,7 +5,7 @@
 namespace hfdp
 {
 
-class Squeak final : public QuackBehavior
+class MuteQuack final : public QuackBehavior
 {
 public:
     virtual void quack() const override;
