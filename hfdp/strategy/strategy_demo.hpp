@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../common/demo.hpp"
+#include "Demo.hpp"
 #include "mallard_duck.hpp"
 #include "model_duck.hpp"
 #include "readhead_duck.hpp"
@@ -11,7 +11,7 @@
 
 namespace hfdp
 {
-    class strategy_demo final : public demo
+    class strategy_demo final : public Demo
     {
     public:
         virtual void run() const override
