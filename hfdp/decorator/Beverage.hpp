@@ -12,7 +12,7 @@ public:
 
     virtual double cost() const noexcept = 0;
 
-    ~Beverage() = default;
+    virtual ~Beverage() = default;
 };
 
 } // namespace hfdp
