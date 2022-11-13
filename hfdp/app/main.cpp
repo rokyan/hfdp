@@ -16,3 +16,8 @@ int main()
 
     return 0;
 }
+
+void run_demo(const hfdp::demo& demo)
+{
+    demo.run();
+}
