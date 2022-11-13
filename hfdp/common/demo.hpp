@@ -2,11 +2,11 @@
 
 namespace hfdp
 {
-    class demo
+    class Demo
     {
     public:
         virtual void run() const = 0;
 
-        virtual ~demo() = default;
+        virtual ~Demo() = default;
     };
 }

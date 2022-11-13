@@ -3,8 +3,10 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-file(GLOB_RECURSE HFDP_HEADERS "*.hpp")
-file(GLOB_RECURSE HFDP_SOURCES "*.cpp")
+include_directories ("${CMAKE_SOURCE_DIR}/hfdp/common")
+
+file (GLOB_RECURSE HFDP_HEADERS "*.hpp")
+file (GLOB_RECURSE HFDP_SOURCES "*.cpp")
 
 # Add source to this project's executable.
 add_executable (hfdp ${HFDP_HEADERS} ${HFDP_SOURCES} "observer/heat_index_display.cpp")

@@ -1,9 +1,9 @@
-﻿#include "../strategy/strategy_demo.hpp"
+﻿#include "Demo.hpp"
+#include "../strategy/strategy_demo.hpp"
 #include "../observer/observer_demo.hpp"
 #include "../decorator/DecoratorDemo.hpp"
-#include "../common/demo.hpp"
 
-void run_demo(const hfdp::demo& demo)
+void run_demo(const hfdp::Demo& demo)
 {
     demo.run();
 }

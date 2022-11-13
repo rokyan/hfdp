@@ -1,11 +1,11 @@
 #pragma once
 
-#include "../common/demo.hpp"
+#include "Demo.hpp"
 
 namespace hfdp
 {
 
-class observer_demo final : public demo
+class observer_demo final : public Demo
 {
 public:
     virtual void run() const override;
