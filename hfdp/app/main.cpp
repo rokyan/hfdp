@@ -3,10 +3,7 @@
 #include "../observer/observer_demo.hpp"
 #include "../decorator/DecoratorDemo.hpp"
 
-void run_demo(const hfdp::Demo& demo)
-{
-    demo.run();
-}
+void run_demo(const hfdp::Demo&);
 
 int main()
 {
@@ -17,7 +14,7 @@ int main()
     return 0;
 }
 
-void run_demo(const hfdp::demo& demo)
+void run_demo(const hfdp::Demo& demo)
 {
     demo.run();
 }

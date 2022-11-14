@@ -7,34 +7,34 @@
 namespace hfdp
 {
 
-duck::duck(std::unique_ptr<fly_behavior> _fly_behavior, std::unique_ptr<quack_behavior> _quack_behavior)
-    : _fly_behavior(std::move(_fly_behavior))
-    , _quack_behavior(std::move(_quack_behavior))
+Duck::Duck(std::unique_ptr<FlyBehavior> fly_behavior, std::unique_ptr<QuackBehavior> quack_behavior)
+    : fly_behavior(std::move(fly_behavior))
+    , quack_behavior(std::move(quack_behavior))
 {}
 
-void duck::perform_fly() const
+void Duck::performFly() const
 {
-    _fly_behavior->fly();
+    fly_behavior->fly();
 }
 
-void duck::perform_quack() const
+void Duck::performQuack() const
 {
-    _quack_behavior->quack();
+    quack_behavior->quack();
 }
 
-void duck::swim() const
+void Duck::swim() const
 {
     std::cout << "All ducks float, even decoys." << std::endl;
 }
 
-void duck::set_fly_behavior(std::unique_ptr<fly_behavior> _fly_behavior)
+void Duck::setFlyBehavior(std::unique_ptr<FlyBehavior> fly_behavior)
 {
-    this->_fly_behavior = std::move(_fly_behavior);
+    this->fly_behavior = std::move(fly_behavior);
 }
 
-void duck::set_quack_behavior(std::unique_ptr<quack_behavior> _quack_behavior)
+void Duck::setQuackBehavior(std::unique_ptr<QuackBehavior> _quack_behavior)
 {
-    this->_quack_behavior = std::move(_quack_behavior);
+    this->quack_behavior = std::move(quack_behavior);
 }
 
 } // namespace hfdp

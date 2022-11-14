@@ -5,7 +5,7 @@
 namespace hfdp
 {
 
-void squeak::quack() const
+void Squeak::quack() const
 {
     std::cout << "Squeak." << std::endl;
 }
