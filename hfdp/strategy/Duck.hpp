@@ -11,7 +11,7 @@ namespace hfdp
 class Duck
 {
 public:
-    Duck(std::unique_ptr<FlyBehavior> fly_behavior, std::unique_ptr<QuackBehavior> quack_behavior);
+    Duck(std::unique_ptr<FlyBehavior> flyBehavior, std::unique_ptr<QuackBehavior> quackBehavior);
 
     void performFly() const;
     void performQuack() const;
@@ -20,14 +20,14 @@ public:
 
     virtual void display() const = 0;
 
-    void setFlyBehavior(std::unique_ptr<FlyBehavior> fly_behavior);
-    void setQuackBehavior(std::unique_ptr<QuackBehavior> quack_behavior);
+    void setFlyBehavior(std::unique_ptr<FlyBehavior> flyBehavior);
+    void setQuackBehavior(std::unique_ptr<QuackBehavior> quackBehavior);
 
     virtual ~Duck() = default;
 
 private:
-    std::unique_ptr<FlyBehavior> fly_behavior;
-    std::unique_ptr<QuackBehavior> quack_behavior;
+    std::unique_ptr<FlyBehavior> flyBehavior;
+    std::unique_ptr<QuackBehavior> quackBehavior;
 };
 
 } // namespace hfdp

@@ -4,11 +4,13 @@
 
 namespace hfdp
 {
-    class ModelDuck final : public Duck
-    {
-    public:
-        ModelDuck();
 
-        virtual void display() const override;
-    };
-}
+class ModelDuck final : public Duck
+{
+public:
+    ModelDuck();
+
+    virtual void display() const override;
+};
+
+} // namespace hfdp
