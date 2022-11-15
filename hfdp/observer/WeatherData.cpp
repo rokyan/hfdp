@@ -1,20 +1,19 @@
-#include "weather_data.hpp"
-#include "observer.hpp"
+#include "WeatherData.hpp"
 
 namespace hfdp
 {
-weather_data::weather_data()
+WeatherData::WeatherData()
     : temperature(.0)
     , humidity(.0)
     , pressure(.0)
 {}
 
-void weather_data::register_observer(observer* observer)
+void WeatherData::registerObserver(Observer* observer)
 {
     observers.push_back(observer);
 }
 
-void weather_data::remove_observer(observer* observer)
+void WeatherData::removeObserver(Observer* observer)
 {
     const auto it = std::find(std::begin(observers), std::end(observers), observer);
 
@@ -24,7 +23,7 @@ void weather_data::remove_observer(observer* observer)
     }
 }
 
-void weather_data::notify_observers()
+void WeatherData::notifyObservers()
 {
     for (const auto& observer : observers)
     {
@@ -32,18 +31,18 @@ void weather_data::notify_observers()
     }
 }
 
-void weather_data::measurements_changed()
+void WeatherData::measurementsChanged()
 {
-    notify_observers();
+    notifyObservers();
 }
 
-void weather_data::set_measurements(double temperature, double humidity, double pressure)
+void WeatherData::setMeasurements(double temperature, double humidity, double pressure)
 {
     this->temperature = temperature;
     this->humidity = humidity;
     this->pressure = pressure;
 
-    measurements_changed();
+    measurementsChanged();
 }
 
 } // namespace hfdp

@@ -3,12 +3,12 @@
 namespace hfdp
 {
 
-class observer
+class Observer
 {
 public:
     virtual void update(double temperature, double humidity, double pressure) = 0;
 
-    virtual ~observer() = default;
+    virtual ~Observer() = default;
 };
 
 } // namespace hfdp

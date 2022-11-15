@@ -3,12 +3,12 @@
 namespace hfdp
 {
 
-class display_element
+class DisplayElement
 {
 public:
     virtual void display() const = 0;
 
-    virtual ~display_element() = default;
+    virtual ~DisplayElement() = default;
 };
 
 } // namespace hfdp

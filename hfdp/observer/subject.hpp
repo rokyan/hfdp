@@ -1,18 +1,18 @@
 #pragma once
 
-#include "observer.hpp"
+#include "Observer.hpp"
 
 namespace hfdp
 {
 
-class subject
+class Subject
 {
 public:
-    virtual void register_observer(observer*) = 0;
-    virtual void remove_observer(observer*) = 0;
-    virtual void notify_observers() = 0;
+    virtual void registerObserver(Observer*) = 0;
+    virtual void removeObserver(Observer*) = 0;
+    virtual void notifyObservers() = 0;
 
-    virtual ~subject() = default;
+    virtual ~Subject() = default;
 };
 
 } // namespace hfdp
