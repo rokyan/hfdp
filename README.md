@@ -16,3 +16,5 @@ Examples from "Head First Design Patterns" - C++ version.
 *Observer* - defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
 *Decorator* - attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+*Singleton* - ensure the class only has one instance and provide a global point of access to it.
