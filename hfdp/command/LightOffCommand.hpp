@@ -6,10 +6,10 @@
 namespace hfdp
 {
 
-class LightOnCommand final : public Command
+class LightOffCommand final : public Command
 {
 public:
-    LightOnCommand(const Light& light);
+    LightOffCommand(const Light& light);
 
     virtual void execute() override;
 

@@ -1,22 +1,22 @@
 #pragma once
 
 #include "Command.hpp"
-#include "Light.hpp"
+#include "Stereo.hpp"
 
 namespace hfdp
 {
 
-class LightOnCommand final : public Command
+class StereoOnWithCDCommand final : public Command
 {
 public:
-    LightOnCommand(const Light& light);
+    StereoOnWithCDCommand(const Stereo& stereo);
 
     virtual void execute() override;
 
     virtual const std::string getName() const override;
 
 private:
-    Light light;
+    Stereo stereo;
 };
 
 } // namespace hfdp

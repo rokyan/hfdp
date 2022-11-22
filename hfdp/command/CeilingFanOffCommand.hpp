@@ -1,22 +1,22 @@
 #pragma once
 
 #include "Command.hpp"
-#include "Light.hpp"
+#include "CeilingFan.hpp"
 
 namespace hfdp
 {
 
-class LightOnCommand final : public Command
+class CeilingFanOffCommand final : public Command
 {
 public:
-    LightOnCommand(const Light& light);
+    CeilingFanOffCommand(const CeilingFan& ceilingFan);
 
     virtual void execute() override;
 
     virtual const std::string getName() const override;
 
 private:
-    Light light;
+    CeilingFan ceilingFan;
 };
 
 } // namespace hfdp
