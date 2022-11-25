@@ -2,7 +2,7 @@
 
 #include "FlyBehavior.hpp"
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 class FlyWithWings final : public FlyBehavior
@@ -11,4 +11,4 @@ public:
     virtual void fly() const override;
 };
 
-} // namespace hfdp
+} // namespace hfdp::strategy

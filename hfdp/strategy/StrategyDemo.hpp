@@ -12,7 +12,7 @@ public:
     virtual void run() const override;
 
 private:
-    void FlyAndQuack(const Duck& duck) const;
+    void FlyAndQuack(const strategy::Duck& duck) const;
 };
 
 } // namespace hfdp

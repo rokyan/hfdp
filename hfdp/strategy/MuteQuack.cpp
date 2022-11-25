@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 void MuteQuack::quack() const
@@ -10,4 +10,4 @@ void MuteQuack::quack() const
     std::cout << "Silence." << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy

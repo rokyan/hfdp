@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 void FlyWithWings::fly() const
@@ -10,4 +10,4 @@ void FlyWithWings::fly() const
     std::cout << "Fly with wings." << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy

@@ -5,7 +5,7 @@
 #include <iostream>
 #include <memory>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 RubberDuck::RubberDuck()
@@ -17,4 +17,4 @@ void RubberDuck::display() const
     std::cout << "I am a rubber duck!" << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy

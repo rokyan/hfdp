@@ -1,8 +1,8 @@
-#include "squeak.hpp"
+#include "Squeak.hpp"
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 void Squeak::quack() const
@@ -10,4 +10,4 @@ void Squeak::quack() const
     std::cout << "Squeak." << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy
