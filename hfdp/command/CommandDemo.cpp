@@ -34,6 +34,8 @@ void CommandDemo::run() const
 
 void CommandDemo::testPlainCommand() const
 {
+    using namespace command;
+
     std::cout << "### Testing a plain command ###\n" << std::endl;
 
     Light livingRoomLight("Living Room");
@@ -76,6 +78,8 @@ void CommandDemo::testPlainCommand() const
 
 void CommandDemo::testMacroCommand() const
 {
+    using namespace command;
+
     std::cout << "### Testing a macro command ###\n" << std::endl;
 
     Light light("Living Room");

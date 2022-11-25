@@ -2,7 +2,7 @@
 
 #include "Command.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class NoCommand final : public Command
@@ -13,4 +13,4 @@ public:
     virtual const std::string getName() const override;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

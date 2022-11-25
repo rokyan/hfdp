@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class Command
@@ -15,4 +15,4 @@ public:
     virtual ~Command() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

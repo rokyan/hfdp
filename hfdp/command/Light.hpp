@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class Light
@@ -17,4 +17,4 @@ private:
     std::string location;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

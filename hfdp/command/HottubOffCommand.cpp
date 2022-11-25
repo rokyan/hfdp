@@ -1,6 +1,6 @@
 #include "HottubOffCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 HottubOffCommand::HottubOffCommand(const Hottub& hottub)
@@ -17,4 +17,4 @@ const std::string HottubOffCommand::getName() const
     return "Hottub Off";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

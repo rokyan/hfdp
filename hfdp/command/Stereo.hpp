@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class Stereo
@@ -21,4 +21,4 @@ private:
     std::string location;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

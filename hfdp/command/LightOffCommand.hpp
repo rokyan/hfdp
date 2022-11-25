@@ -3,7 +3,7 @@
 #include "Command.hpp"
 #include "Light.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class LightOffCommand final : public Command
@@ -19,4 +19,4 @@ private:
     Light light;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

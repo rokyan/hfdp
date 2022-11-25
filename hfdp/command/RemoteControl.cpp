@@ -3,7 +3,7 @@
 
 #include <utility>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 RemoteControl::RemoteControl()
@@ -43,4 +43,4 @@ std::ostream& operator<<(std::ostream& os, const RemoteControl& remoteControl)
     return os;
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

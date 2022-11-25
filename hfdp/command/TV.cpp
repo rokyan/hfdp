@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 TV::TV(const std::string& location)
@@ -19,4 +19,4 @@ void TV::off()
     std::cout << location << " TV is off" << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

@@ -3,7 +3,7 @@
 #include "Command.hpp"
 #include "Stereo.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class StereoOnCommand final : public Command
@@ -19,4 +19,4 @@ private:
     Stereo stereo;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

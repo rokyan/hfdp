@@ -1,6 +1,6 @@
 #include "StereoOffCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 StereoOffCommand::StereoOffCommand(const Stereo& stereo)
@@ -17,4 +17,4 @@ const std::string StereoOffCommand::getName() const
     return "Stereo Off";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

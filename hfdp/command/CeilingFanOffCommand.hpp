@@ -3,7 +3,7 @@
 #include "Command.hpp"
 #include "CeilingFan.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class CeilingFanOffCommand final : public Command
@@ -19,4 +19,4 @@ private:
     CeilingFan ceilingFan;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

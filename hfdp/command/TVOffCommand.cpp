@@ -1,6 +1,6 @@
 #include "TVOffCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 TVOffCommand::TVOffCommand(const TV& tv)
@@ -17,4 +17,4 @@ const std::string TVOffCommand::getName() const
     return "TV Off";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

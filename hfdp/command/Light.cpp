@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 Light::Light(const std::string& location)
@@ -19,4 +19,4 @@ void Light::off()
     std::cout << location << " light is off" << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

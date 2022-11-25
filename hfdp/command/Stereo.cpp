@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 Stereo::Stereo(const std::string& location)
@@ -39,4 +39,4 @@ void Stereo::setVolume(int volume)
     std::cout << location << " stereo volume is set to " << volume << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::command
