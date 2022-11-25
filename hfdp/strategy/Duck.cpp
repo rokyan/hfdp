@@ -4,7 +4,7 @@
 #include <utility>
 #include <memory>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 Duck::Duck(std::unique_ptr<FlyBehavior> flyBehavior, std::unique_ptr<QuackBehavior> quackBehavior)
@@ -37,4 +37,4 @@ void Duck::setQuackBehavior(std::unique_ptr<QuackBehavior> quackBehavior)
     this->quackBehavior = std::move(quackBehavior);
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy

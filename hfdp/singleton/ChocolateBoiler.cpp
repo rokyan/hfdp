@@ -1,6 +1,6 @@
 #include "ChocolateBolier.hpp"
 
-namespace hfdp
+namespace hfdp::singleton
 {
 
 ChocolateBoiler& ChocolateBoiler::getInstance()
@@ -49,4 +49,4 @@ bool ChocolateBoiler::isBoiled() const noexcept
     return boiled;
 }
 
-} // namespace hfdp
+} // namespace hfdp::singleton

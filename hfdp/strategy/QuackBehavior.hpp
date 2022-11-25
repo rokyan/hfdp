@@ -1,6 +1,6 @@
 #pragma once
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 class QuackBehavior
@@ -11,4 +11,4 @@ public:
     virtual ~QuackBehavior() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::strategy

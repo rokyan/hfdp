@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 void FlyNoWay::fly() const
@@ -10,4 +10,4 @@ void FlyNoWay::fly() const
     std::cout << "I can't fly." << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy

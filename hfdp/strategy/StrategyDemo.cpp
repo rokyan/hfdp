@@ -11,6 +11,8 @@
 namespace hfdp
 {
 
+using namespace strategy;
+
 void StrategyDemo::run() const
 {
     FlyAndQuack(MallardDuck{});

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace hfdp
+namespace hfdp::singleton
 {
 
 class ChocolateBoiler
@@ -29,4 +29,4 @@ private:
     bool boiled;
 };
 
-} // namespace hfdp
+} // namespace hfdp::singleton

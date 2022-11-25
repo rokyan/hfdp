@@ -6,6 +6,8 @@
 namespace hfdp
 {
 
+using namespace singleton;
+
 void SingletonDemo::run() const
 {
     auto& boiler = ChocolateBoiler::getInstance();
