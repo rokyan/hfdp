@@ -1,6 +1,6 @@
 #include "CeilingFanOffCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 CeilingFanOffCommand::CeilingFanOffCommand(const CeilingFan& ceilingFan)
@@ -17,4 +17,4 @@ const std::string CeilingFanOffCommand::getName() const
     return "Ceiling Fan Off";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

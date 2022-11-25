@@ -1,6 +1,6 @@
 #include "TVOnCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 TVOnCommand::TVOnCommand(const TV& tv)
@@ -17,4 +17,4 @@ const std::string TVOnCommand::getName() const
     return "TV On";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

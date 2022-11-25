@@ -3,7 +3,7 @@
 #include "Command.hpp"
 #include "Hottub.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class HottubOffCommand final : public Command
@@ -19,4 +19,4 @@ private:
     Hottub hottub;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

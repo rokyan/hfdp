@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 CeilingFan::CeilingFan(const std::string& location)
@@ -38,4 +38,4 @@ void CeilingFan::off()
     std::cout << location << " ceiling fan is off" << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

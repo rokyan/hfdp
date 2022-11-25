@@ -1,6 +1,6 @@
 #include "StereoOnCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 StereoOnCommand::StereoOnCommand(const Stereo& stereo)
@@ -17,4 +17,4 @@ const std::string StereoOnCommand::getName() const
     return "Stereo On";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

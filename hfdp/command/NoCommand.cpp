@@ -1,6 +1,6 @@
 #include "NoCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 void NoCommand::execute() {}
@@ -10,4 +10,4 @@ const std::string NoCommand::getName() const
     return "None";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

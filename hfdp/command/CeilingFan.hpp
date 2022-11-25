@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class CeilingFan
@@ -23,4 +23,4 @@ private:
     Speed speed;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

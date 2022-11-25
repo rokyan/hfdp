@@ -5,7 +5,7 @@
 #include <vector>
 #include <memory>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class MacroCommand final : public Command
@@ -27,4 +27,4 @@ private:
     std::vector<std::unique_ptr<Command>> commands;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

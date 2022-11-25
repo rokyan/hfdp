@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 Hottub::Hottub()
@@ -23,4 +23,4 @@ void Hottub::off()
     std::cout << "Hottub is off" << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

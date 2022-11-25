@@ -3,7 +3,7 @@
 #include "Command.hpp"
 #include "TV.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class TVOnCommand final : public Command
@@ -19,4 +19,4 @@ private:
     TV tv;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

@@ -1,6 +1,6 @@
 #include "HottubOnCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 HottubOnCommand::HottubOnCommand(const Hottub& hottub)
@@ -17,4 +17,4 @@ const std::string HottubOnCommand::getName() const
     return "Hottub On";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

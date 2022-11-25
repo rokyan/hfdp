@@ -1,6 +1,6 @@
 #include "LightOnCommand.hpp"
 
-namespace hfdp
+namespace hfdp::command
 {
 
 LightOnCommand::LightOnCommand(const Light& light)
@@ -17,4 +17,4 @@ const std::string LightOnCommand::getName() const
     return "Light On";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command

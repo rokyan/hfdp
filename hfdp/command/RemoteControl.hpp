@@ -6,7 +6,7 @@
 #include <memory>
 #include <ostream>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class RemoteControl final
@@ -35,4 +35,4 @@ private:
     std::vector<std::unique_ptr<Command>> offCommands;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

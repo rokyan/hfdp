@@ -1,6 +1,6 @@
 #pragma once
 
-namespace hfdp
+namespace hfdp::command
 {
 
 class Hottub
@@ -15,4 +15,4 @@ private:
     bool isOn;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

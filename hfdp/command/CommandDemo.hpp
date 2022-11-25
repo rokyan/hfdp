@@ -15,4 +15,4 @@ private:
     void testMacroCommand() const;
 };
 
-} // namespace hfdp
+} // namespace hfdp::command

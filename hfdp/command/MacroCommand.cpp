@@ -2,7 +2,7 @@
 
 #include <utility>
 
-namespace hfdp
+namespace hfdp::command
 {
 
 MacroCommand::MacroCommand(std::vector<std::unique_ptr<Command>>&& commands)
@@ -22,4 +22,4 @@ const std::string MacroCommand::getName() const
     return "Macro Command";
 }
 
-} // namespace hfdp
+} // namespace hfdp::command
