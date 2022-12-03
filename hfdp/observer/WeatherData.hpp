@@ -5,7 +5,7 @@
 
 #include <vector>
 
-namespace hfdp
+namespace hfdp::observer
 {
 
 class WeatherData final : public Subject
@@ -31,4 +31,4 @@ private:
     double pressure;
 };
 
-} // namespace hfdp
+} // namespace hfdp::observer

@@ -4,7 +4,7 @@
 #include "DisplayElement.hpp"
 #include "WeatherData.hpp"
 
-namespace hfdp
+namespace hfdp::observer
 {
 
 class ForecastDisplay : public Observer, public DisplayElement
@@ -25,4 +25,4 @@ private:
     double lastPressure;
 };
 
-} // namespace hfdp
+} // namespace hfdp::observer

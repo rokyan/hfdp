@@ -1,6 +1,6 @@
 #include "WeatherData.hpp"
 
-namespace hfdp
+namespace hfdp::observer
 {
 WeatherData::WeatherData()
     : temperature(.0)
@@ -45,4 +45,4 @@ void WeatherData::setMeasurements(double temperature, double humidity, double pr
     measurementsChanged();
 }
 
-} // namespace hfdp
+} // namespace hfdp::observer

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace hfdp
+namespace hfdp::observer
 {
 
 class Observer
@@ -11,4 +11,4 @@ public:
     virtual ~Observer() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::observer

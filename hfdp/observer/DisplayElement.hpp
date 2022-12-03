@@ -1,6 +1,6 @@
 #pragma once
 
-namespace hfdp
+namespace hfdp::observer
 {
 
 class DisplayElement
@@ -11,4 +11,4 @@ public:
     virtual ~DisplayElement() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::observer

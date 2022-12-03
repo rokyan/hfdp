@@ -2,7 +2,7 @@
 
 #include "Observer.hpp"
 
-namespace hfdp
+namespace hfdp::observer
 {
 
 class Subject
@@ -15,4 +15,4 @@ public:
     virtual ~Subject() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::observer

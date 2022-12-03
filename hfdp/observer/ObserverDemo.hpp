@@ -13,4 +13,4 @@ public:
     virtual const std::string getName() const override;
 };
 
-} // namespace hfdp
+} // namespace hfdp::observer
