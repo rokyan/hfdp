@@ -9,6 +9,8 @@ namespace hfdp
 
 void ObserverDemo::run() const
 {
+    using namespace observer;
+
     WeatherData weatherData;
 
     CurrentConditionsDisplay currentConditionsDisplay(&weatherData);

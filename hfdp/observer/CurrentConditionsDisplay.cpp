@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::observer
 {
 
 CurrentConditionsDisplay::CurrentConditionsDisplay(WeatherData* weatherData)
@@ -32,4 +32,4 @@ CurrentConditionsDisplay::~CurrentConditionsDisplay()
     weatherData->registerObserver(this);
 }
 
-} // namespace hfdp
+} // namespace hfdp::observer

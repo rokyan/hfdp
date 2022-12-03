@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::observer
 {
 
 HeatIndexDisplay::HeatIndexDisplay(WeatherData* weatherData)
@@ -37,4 +37,4 @@ double HeatIndexDisplay::computeHeatIndex(double temperature, double humidity) c
         (0.0000000000481975 * (temperature * temperature * temperature * humidity * humidity * humidity)));
 }
 
-} // namespace hfdp
+} // namespace hfdp::observer

@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::observer
 {
 
 ForecastDisplay::ForecastDisplay(WeatherData* weatherData)
@@ -46,4 +46,4 @@ ForecastDisplay::~ForecastDisplay()
     weatherData->removeObserver(this);
 }
 
-} // namespace hfdp
+} // namespace hfdp::observer
