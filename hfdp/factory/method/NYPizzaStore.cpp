@@ -4,7 +4,7 @@
 #include "NYStyleClamPizza.hpp"
 #include "NYStylePepperoniPizza.hpp"
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 std::unique_ptr<Pizza> NYPizzaStore::createPizza(const std::string& item) const
@@ -27,4 +27,4 @@ std::unique_ptr<Pizza> NYPizzaStore::createPizza(const std::string& item) const
     }
 }
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

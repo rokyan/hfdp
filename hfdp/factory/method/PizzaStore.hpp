@@ -5,7 +5,7 @@
 #include <string>
 #include <memory>
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 class PizzaStore
@@ -18,4 +18,4 @@ public:
     virtual ~PizzaStore() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

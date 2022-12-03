@@ -20,4 +20,9 @@ void SingletonDemo::run() const
     std::cout << std::boolalpha << boiler.isEmpty() << std::endl;
 }
 
+const std::string SingletonDemo::getName() const
+{
+    return "Singleton";
+}
+
 } // namespace hfdp

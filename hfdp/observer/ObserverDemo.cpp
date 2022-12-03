@@ -18,4 +18,9 @@ void ObserverDemo::run() const
     weatherData.setMeasurements(25.0, 60.0, 30.0);
 }
 
+const std::string ObserverDemo::getName() const
+{
+    return "Observer";
+}
+
 } // namespace hfdp

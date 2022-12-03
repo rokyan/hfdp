@@ -4,7 +4,7 @@
 #include "ChicagoStyleClamPizza.hpp"
 #include "ChicagoStylePepperoniPizza.hpp"
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 std::unique_ptr<Pizza> ChicagoPizzaStore::createPizza(const std::string& item) const
@@ -27,4 +27,4 @@ std::unique_ptr<Pizza> ChicagoPizzaStore::createPizza(const std::string& item) c
     }
 }
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

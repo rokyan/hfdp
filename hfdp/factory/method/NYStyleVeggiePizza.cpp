@@ -1,6 +1,6 @@
 #include "NYStyleVeggiePizza.hpp"
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 NYStyleVeggiePizza::NYStyleVeggiePizza()
@@ -12,4 +12,4 @@ NYStyleVeggiePizza::NYStyleVeggiePizza()
         "Red Pepper" })
 {}
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

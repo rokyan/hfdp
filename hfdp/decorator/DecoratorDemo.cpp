@@ -35,4 +35,9 @@ void DecoratorDemo::printBeverage(Beverage* beverage) const
     std::cout << beverage->getDescription() << " $" << beverage->cost() << std::endl << std::endl;
 }
 
+const std::string DecoratorDemo::getName() const
+{
+    return "Decorator";
+}
+
 } // namespace hfdp

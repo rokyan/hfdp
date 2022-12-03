@@ -37,4 +37,9 @@ void StrategyDemo::FlyAndQuack(const Duck& duck) const
     std::cout << "###" << std::endl;
 }
 
+const std::string StrategyDemo::getName() const
+{
+    return "Strategy";
+}
+
 } // namespace hfdp

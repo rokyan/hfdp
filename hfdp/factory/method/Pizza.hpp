@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 class Pizza
@@ -26,4 +26,4 @@ private:
     std::vector<std::string> toppings;
 };
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

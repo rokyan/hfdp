@@ -1,6 +1,6 @@
 #include "NYStylePepperoniPizza.hpp"
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 NYStylePepperoniPizza::NYStylePepperoniPizza()
@@ -13,4 +13,4 @@ NYStylePepperoniPizza::NYStylePepperoniPizza()
         "Red Pepper"})
 {}
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

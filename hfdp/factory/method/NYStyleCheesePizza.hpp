@@ -2,7 +2,7 @@
 
 #include "Pizza.hpp"
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 class NYStyleCheesePizza final : public Pizza
@@ -11,4 +11,4 @@ public:
     NYStyleCheesePizza();
 };
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

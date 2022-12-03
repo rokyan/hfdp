@@ -2,7 +2,7 @@
 
 #include "Pizza.hpp"
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 class ChicagoStyleClamPizza final : public Pizza
@@ -13,4 +13,4 @@ public:
     virtual void cut() override;
 };
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method
