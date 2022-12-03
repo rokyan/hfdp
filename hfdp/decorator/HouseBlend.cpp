@@ -1,6 +1,6 @@
 #include "HouseBlend.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 const std::string HouseBlend::getDescription() const noexcept
@@ -13,4 +13,4 @@ double HouseBlend::cost() const noexcept
     return .89;
 }
 
-} // namespace hfdp
+} // namespace hfdp::decorator

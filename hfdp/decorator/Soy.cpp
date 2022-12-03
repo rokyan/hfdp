@@ -1,6 +1,6 @@
 #include "Soy.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 Soy::Soy(std::unique_ptr<Beverage> beverage)
@@ -17,4 +17,4 @@ double Soy::cost() const noexcept
     return beverage->cost() + .15;
 }
 
-} // namespace hfdp
+} // namespace hfdp::decorator

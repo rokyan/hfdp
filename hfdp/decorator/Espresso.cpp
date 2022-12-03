@@ -1,6 +1,6 @@
 #include "Espresso.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 const std::string Espresso::getDescription() const noexcept
@@ -13,4 +13,4 @@ double Espresso::cost() const noexcept
     return 1.99;
 }
 
-} // namespace hfdp
+} // namespace hfdp::decorator

@@ -1,6 +1,6 @@
 #include "Mocha.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 Mocha::Mocha(std::unique_ptr<Beverage> beverage)
@@ -18,4 +18,4 @@ double Mocha::cost() const noexcept
     return beverage->cost() + .20;
 }
 
-} // namespace hfdp
+} // namespace hfdp::decorator

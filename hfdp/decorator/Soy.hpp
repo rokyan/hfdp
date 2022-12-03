@@ -4,7 +4,7 @@
 
 #include <memory>
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 class Soy final : public CondimentDecorator
@@ -17,4 +17,4 @@ public:
     virtual double cost() const noexcept override;
 };
 
-} // namespace hfdp
+} // namespace hfdp::decorator

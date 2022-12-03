@@ -2,7 +2,7 @@
 
 #include "Beverage.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 class Espresso final : public Beverage
@@ -13,4 +13,4 @@ public:
     virtual double cost() const noexcept override;
 };
 
-} // namespace hfdp
+} // namespace hfdp::decorator
