@@ -6,7 +6,7 @@
 #include <memory>
 #include <string>
 
-namespace hfdp
+namespace hfdp::abstract_factory
 {
 
 class PepperoniPizza final : public Pizza
@@ -20,4 +20,4 @@ private:
     std::unique_ptr<PizzaIngredientFactory> ingredientFactory;
 };
 
-} // namespace hfdp
+} // namespace hfdp::abstract_factory

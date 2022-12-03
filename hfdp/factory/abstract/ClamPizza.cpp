@@ -6,7 +6,7 @@ namespace hfdp::abstract_factory
 {
 
 ClamPizza::ClamPizza(const std::string& name, std::unique_ptr<PizzaIngredientFactory> ingredientFactory)
-    : AFPizza(name)
+    : Pizza(name)
     , ingredientFactory(std::move(ingredientFactory))
 {}
 

@@ -27,4 +27,9 @@ void AbstractFactoryDemo::run() const
     std::cout << "Ordered a " << pizza->getName() << std::endl;
 }
 
+const std::string AbstractFactoryDemo::getName() const
+{
+    return "Abstract Factory";
+}
+
 } // namespace hfdp

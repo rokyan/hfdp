@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 std::unique_ptr<Pizza> PizzaStore::orderPizza(const std::string& item) const
@@ -21,4 +21,4 @@ std::unique_ptr<Pizza> PizzaStore::orderPizza(const std::string& item) const
     return pizza;
 }
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

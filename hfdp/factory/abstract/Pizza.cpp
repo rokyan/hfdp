@@ -5,27 +5,27 @@
 namespace hfdp::abstract_factory
 {
 
-AFPizza::AFPizza(const std::string& name)
+Pizza::Pizza(const std::string& name)
     : name(name)
 {}
 
 
-void AFPizza::bake()
+void Pizza::bake()
 {
     std::cout << "Bake for 25 minutes at 350" << std::endl;
 }
 
-void AFPizza::cut()
+void Pizza::cut()
 {
     std::cout << "Cutting the pizza into diagonal slices" << std::endl;
 }
 
-void AFPizza::box()
+void Pizza::box()
 {
     std::cout << "Place pizza in official PizzaStore box" << std::endl;
 }
 
-const std::string AFPizza::getName() const
+const std::string Pizza::getName() const
 {
     return name;
 }

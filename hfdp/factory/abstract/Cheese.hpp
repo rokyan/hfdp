@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace hfdp
+namespace hfdp::abstract_factory
 {
 
 class Cheese
@@ -13,4 +13,4 @@ public:
     virtual ~Cheese() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::abstract_factory

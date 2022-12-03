@@ -1,6 +1,6 @@
 #include "NYStyleClamPizza.hpp"
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 NYStyleClamPizza::NYStyleClamPizza()
@@ -9,4 +9,4 @@ NYStyleClamPizza::NYStyleClamPizza()
         "Fresh Clams from Long Island Sound" })
 {}
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

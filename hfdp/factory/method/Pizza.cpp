@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 Pizza::Pizza(const std::string& name, const std::string& dough, const std::string& sauce, const std::vector<std::string>& toppings)
@@ -48,4 +48,4 @@ const std::string Pizza::getName() const
     return name;
 }
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

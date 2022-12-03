@@ -5,7 +5,7 @@
 
 #include <memory>
 
-namespace hfdp
+namespace hfdp::abstract_factory
 {
 
 class CheesePizza final : public Pizza

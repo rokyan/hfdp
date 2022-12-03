@@ -128,4 +128,9 @@ void CommandDemo::testMacroCommand() const
     std::cout << std::endl;
 }
 
+const std::string CommandDemo::getName() const
+{
+    return "Command";
+}
+
 } // namespace hfdp

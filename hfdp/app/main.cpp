@@ -6,6 +6,8 @@
 #include "../singleton/SingletonDemo.hpp"
 #include "../command/CommandDemo.hpp"
 
+#include <iostream>
+
 void run_demo(const hfdp::Demo&);
 
 int main()
@@ -15,7 +17,6 @@ int main()
     run_demo(hfdp::DecoratorDemo{});
     run_demo(hfdp::FactoryMethodDemo{});
     run_demo(hfdp::AbstractFactoryDemo{});
-    run_demo(hfdp::AbstractFactoryDemo{});
     run_demo(hfdp::SingletonDemo{});
     run_demo(hfdp::CommandDemo{});
 
@@ -24,5 +25,9 @@ int main()
 
 void run_demo(const hfdp::Demo& demo)
 {
+    std::cout << "Running a demo for " << demo.getName() << " pattern:" << std::endl << std::endl;
+
     demo.run();
+
+    std::cout << std::endl;
 }

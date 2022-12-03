@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::abstract_method
 {
 
 ChicagoStyleClamPizza::ChicagoStyleClamPizza()
@@ -16,4 +16,4 @@ void ChicagoStyleClamPizza::cut()
     std::cout << "Cutting the pizza into square slices" << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::abstract_method

@@ -10,7 +10,7 @@
 #include <memory>
 #include <vector>
 
-namespace hfdp
+namespace hfdp::abstract_factory
 {
 
 class Pizza
@@ -39,4 +39,4 @@ protected:
     std::unique_ptr<Clams> clams;
 };
 
-} // namespace hfdp::abstract_factory::abstract
+} // namespace hfdp::abstract_factory

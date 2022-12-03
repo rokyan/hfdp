@@ -10,6 +10,8 @@ class CommandDemo final : public Demo
 public:
     virtual void run() const override;
 
+    virtual const std::string getName() const override;
+
 private:
     void testPlainCommand() const;
     void testMacroCommand() const;

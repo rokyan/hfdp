@@ -9,6 +9,8 @@ namespace hfdp
 
 void FactoryMethodDemo::run() const
 {
+    using namespace abstract_method;
+
     NYPizzaStore nyPizzaStore;
     ChicagoPizzaStore chicagoPizzaStore;
 
@@ -35,6 +37,11 @@ void FactoryMethodDemo::run() const
 
     pizza = chicagoPizzaStore.orderPizza("veggie");
     std::cout << "Ordered " << pizza->getName() << std::endl;
+}
+
+const std::string FactoryMethodDemo::getName() const
+{
+    return "Factory Method";
 }
 
 } // namespace hfdp
