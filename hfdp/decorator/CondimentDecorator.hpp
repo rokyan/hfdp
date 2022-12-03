@@ -4,7 +4,7 @@
 
 #include <memory>
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 class CondimentDecorator : public Beverage
@@ -16,4 +16,4 @@ protected:
     std::unique_ptr<Beverage> beverage;
 };
 
-} // namespace hfdp
+} // namespace hfdp::decorator

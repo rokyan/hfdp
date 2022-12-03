@@ -1,6 +1,6 @@
 #include "DarkRoast.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 const std::string DarkRoast::getDescription() const noexcept
@@ -13,4 +13,4 @@ double DarkRoast::cost() const noexcept
     return .99;
 }
 
-} // namespace hfdp
+} // namespace hfdp::decorator

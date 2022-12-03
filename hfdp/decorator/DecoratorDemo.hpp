@@ -14,7 +14,7 @@ public:
     virtual const std::string getName() const override;
 
 private:
-    void printBeverage(Beverage* beverage) const;
+    void printBeverage(decorator::Beverage* beverage) const;
 };
 
 } // namespace hfdp

@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 class Beverage
@@ -15,4 +15,4 @@ public:
     virtual ~Beverage() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::decorator

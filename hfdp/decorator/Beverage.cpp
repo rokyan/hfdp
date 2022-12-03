@@ -1,6 +1,6 @@
 #include "beverage.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 const std::string Beverage::getDescription() const noexcept
@@ -8,4 +8,4 @@ const std::string Beverage::getDescription() const noexcept
     return "Unknown beverage";
 }
 
-} // namespace hfdp
+} // namespace hfdp::decorator

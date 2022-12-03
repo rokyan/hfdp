@@ -14,6 +14,8 @@ namespace hfdp
 
 void DecoratorDemo::run() const
 {
+    using namespace decorator;
+
     std::unique_ptr<Beverage> beverage = std::make_unique<Espresso>();
     printBeverage(beverage.get());
 
@@ -30,7 +32,7 @@ void DecoratorDemo::run() const
     printBeverage(one_more_beverage.get());
 }
 
-void DecoratorDemo::printBeverage(Beverage* beverage) const
+void DecoratorDemo::printBeverage(decorator::Beverage* beverage) const
 {
     std::cout << beverage->getDescription() << " $" << beverage->cost() << std::endl << std::endl;
 }

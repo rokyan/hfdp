@@ -1,6 +1,6 @@
 #include "Whip.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 Whip::Whip(std::unique_ptr<Beverage> beverage)
@@ -17,4 +17,4 @@ double Whip::cost() const noexcept
     return beverage->cost() + .10;
 }
 
-} // namespace hfdp
+} // namespace hfdp::decorator

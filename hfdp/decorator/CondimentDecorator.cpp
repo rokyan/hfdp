@@ -1,10 +1,10 @@
 #include "CondimentDecorator.hpp"
 
-namespace hfdp
+namespace hfdp::decorator
 {
 
 CondimentDecorator::CondimentDecorator(std::unique_ptr<Beverage> beverage)
     : beverage(std::move(beverage))
 {}
 
-} // namespace hfdp
+} // namespace hfdp::decorator
