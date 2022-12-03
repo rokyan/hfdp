@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 void Quack::quack() const
@@ -10,4 +10,4 @@ void Quack::quack() const
     std::cout << "Quack." << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy

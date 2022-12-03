@@ -23,3 +23,5 @@ Examples from "Head First Design Patterns" - C++ version.
 *Factory method* - defines an interface for creating an object, but let subclasses decide which class to instantiate. Factory method lets a class defer instantiation of subclasses.
 
 *Singleton* - ensure the class only has one instance and provide a global point of access to it.
+
+*Command* - encapsulate a request as an object, thereby letting you parametrize clients with different requests, queue or log requests, and support undoable operations.

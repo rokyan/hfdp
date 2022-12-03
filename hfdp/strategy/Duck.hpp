@@ -5,13 +5,19 @@
 
 #include <memory>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 class Duck
 {
 public:
     Duck(std::unique_ptr<FlyBehavior> flyBehavior, std::unique_ptr<QuackBehavior> quackBehavior);
+
+    Duck(const Duck& other) = delete;
+    Duck& operator=(const Duck& other) = delete;
+
+    Duck(Duck&& other) = default;
+    Duck& operator=(Duck&& other) = default;
 
     void performFly() const;
     void performQuack() const;
@@ -30,4 +36,4 @@ private:
     std::unique_ptr<QuackBehavior> quackBehavior;
 };
 
-} // namespace hfdp
+} // namespace hfdp::strategy

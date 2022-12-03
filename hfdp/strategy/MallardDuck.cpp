@@ -5,7 +5,7 @@
 #include <iostream>
 #include <memory>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 MallardDuck::MallardDuck()
@@ -17,4 +17,4 @@ void MallardDuck::display() const
     std::cout << "I am a real Mallard duck!" << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy

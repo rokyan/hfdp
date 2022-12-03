@@ -5,7 +5,7 @@
 #include <iostream>
 #include <memory>
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 RedheadDuck::RedheadDuck()
@@ -17,4 +17,4 @@ void RedheadDuck::display() const
     std::cout << "I am a readhead duck!" << std::endl;
 }
 
-} // namespace hfdp
+} // namespace hfdp::strategy

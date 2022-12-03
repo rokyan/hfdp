@@ -1,6 +1,6 @@
 #pragma once
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 class FlyBehavior
@@ -11,4 +11,4 @@ public:
     virtual ~FlyBehavior() = default;
 };
 
-} // namespace hfdp
+} // namespace hfdp::strategy

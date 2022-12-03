@@ -4,6 +4,7 @@
 #include "../factory/method/FactoryMethodDemo.hpp"
 #include "../factory/abstract/AbstractFactoryDemo.hpp"
 #include "../singleton/SingletonDemo.hpp"
+#include "../command/CommandDemo.hpp"
 
 void run_demo(const hfdp::Demo&);
 
@@ -16,6 +17,7 @@ int main()
     run_demo(hfdp::AbstractFactoryDemo{});
     run_demo(hfdp::AbstractFactoryDemo{});
     run_demo(hfdp::SingletonDemo{});
+    run_demo(hfdp::CommandDemo{});
 
     return 0;
 }

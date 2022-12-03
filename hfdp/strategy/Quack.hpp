@@ -2,7 +2,7 @@
 
 #include "QuackBehavior.hpp"
 
-namespace hfdp
+namespace hfdp::strategy
 {
 
 class Quack final : public QuackBehavior
@@ -11,4 +11,4 @@ public:
     virtual void quack() const override;
 };
 
-} // namespace hfdp
+} // namespace hfdp::strategy
