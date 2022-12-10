@@ -9,6 +9,7 @@ Examples from "Head First Design Patterns" - C++ version.
 * Strive for loosely coupled designs between objects that interact.
 * Classes should be open for extension, but closed for modification.
 * Depend on abstraction. Do not depend on concrete classes.
+* Talk only to your friends.
 
 ## Patterns
 
@@ -25,3 +26,7 @@ Examples from "Head First Design Patterns" - C++ version.
 *Singleton* - ensure the class only has one instance and provide a global point of access to it.
 
 *Command* - encapsulate a request as an object, thereby letting you parametrize clients with different requests, queue or log requests, and support undoable operations.
+
+*Adapter* - converts the interface of a class into another interface clients expect. Lets classes work together that couldn't otherwise because of incompatible interfaces.
+
+*Facade* - provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the substem easier to use.
