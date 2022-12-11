@@ -9,7 +9,7 @@ Examples from "Head First Design Patterns" - C++ version.
 * Strive for loosely coupled designs between objects that interact.
 * Classes should be open for extension, but closed for modification.
 * Depend on abstraction. Do not depend on concrete classes.
-* Talk only to your friends.
+* Principle of least knowledge: talk only to your friends.
 
 ## Patterns
 
