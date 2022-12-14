@@ -6,6 +6,7 @@
 #include "../singleton/SingletonDemo.hpp"
 #include "../command/CommandDemo.hpp"
 #include "../adapter/AdapterDemo.hpp"
+#include "../facade/FacadeDemo.hpp"
 
 #include <iostream>
 
@@ -21,6 +22,7 @@ int main()
     run_demo(hfdp::SingletonDemo{});
     run_demo(hfdp::CommandDemo{});
     run_demo(hfdp::AdapterDemo{});
+    run_demo(hfdp::FacadeDemo{});
 
     return 0;
 }
