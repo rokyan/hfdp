@@ -1,11 +1,13 @@
 #pragma once
 
+#include "Appliance.hpp"
+
 #include <string>
 
 namespace hfdp::facade
 {
 
-class CdPlayer final
+class CdPlayer final : public Appliance
 {
 public:
     CdPlayer(const std::string& description);
@@ -23,7 +25,7 @@ public:
     void pause();
 
 private:
-    std::string description;
+    std::string title;
     int track;
 };
 

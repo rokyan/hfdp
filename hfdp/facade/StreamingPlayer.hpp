@@ -1,11 +1,13 @@
 #pragma once
 
+#include "Appliance.hpp"
+
 #include <string>
 
 namespace hfdp::facade
 {
 
-class StreamingPlayer final
+class StreamingPlayer final : public Appliance
 {
 public:
     StreamingPlayer(const std::string& description);
@@ -22,7 +24,6 @@ public:
     void setSurroundAudio();
 
 private:
-    std::string description;
     std::string movie;
     int chapter;
 };

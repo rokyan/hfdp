@@ -1,27 +1,25 @@
 #include "TheaterLights.hpp"
 
-#include <iostream>
-
 namespace hfdp::facade
 {
 
 TheaterLights::TheaterLights(const std::string& description)
-    : description(description)
+    : Appliance(description)
 {}
 
 void TheaterLights::on()
 {
-    std::cout << description << " on" << std::endl;
+    print("on");
 }
 
 void TheaterLights::off()
 {
-    std::cout << description << " off" << std::endl;
+    print("off");
 }
 
 void TheaterLights::dim(int level)
 {
-    std::cout << description << " dimming to " << level << std::endl;
+    print("dimming to ", level);
 }
 
 } // namespace hfdp::facade

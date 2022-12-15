@@ -1,61 +1,58 @@
 #include "StreamingPlayer.hpp"
 
-#include <iostream>
-
 namespace hfdp::facade
 {
 
 StreamingPlayer::StreamingPlayer(const std::string& description)
-    : description(description)
+    : Appliance(description)
     , chapter(0)
 {}
 
 void StreamingPlayer::on()
 {
-    std::cout << description << " on" << std::endl;
+    print("on");
 }
 
 void StreamingPlayer::off()
 {
-    std::cout << description << " off" << std::endl;
+    print("on");
 }
 
 void StreamingPlayer::play(const std::string& movie)
 {
     this->movie = movie;
-
     chapter = 0;
 
-    std::cout << description << " playing " << movie << std::endl;
+    print("playing movie", movie);
 }
 
 void StreamingPlayer::play(int chapter)
 {
     this->chapter = chapter;
 
-    std::cout << description << " playing chapter " << chapter << " of movie " << movie << std::endl;
+    print("playing chapter", chapter, "of movie", movie);
 }
 
 void StreamingPlayer::stop()
 {
     chapter = 0;
 
-    std::cout << description << " stopped " << movie << std::endl;
+    print("stopped", movie);
 }
 
 void StreamingPlayer::pause()
 {
-    std::cout << description << " stopped " << movie << std::endl;
+    print("paused", movie);
 }
 
 void StreamingPlayer::setTwoChannelAudio()
 {
-    std::cout << description << " set two channel audio" << std::endl;
+    print("set two channel audio");
 }
 
 void StreamingPlayer::setSurroundAudio()
 {
-    std::cout << description << " set surround audio" << std::endl;
+    print("set surround audio");
 }
 
 } // namespace hfdp::facade

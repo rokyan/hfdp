@@ -1,22 +1,20 @@
 #include "Screen.hpp"
 
-#include <iostream>
-
 namespace hfdp::facade
 {
 
 Screen::Screen(const std::string& description)
-    : description(description)
+    : Appliance(description)
 {}
 
 void Screen::up()
 {
-    std::cout << description << " going up" << std::endl;
+    print("going up");
 }
 
 void Screen::down()
 {
-    std::cout << description << " going down" << std::endl;
+    print("going down");
 }
 
 } // namespace hfdp::facade

@@ -1,11 +1,13 @@
 #pragma once
 
+#include "Appliance.hpp"
+
 #include <string>
 
 namespace hfdp::facade
 {
 
-class Tuner final
+class Tuner final : public Appliance
 {
 public:
     Tuner(const std::string& description);
@@ -19,7 +21,6 @@ public:
     void setFm();
 
 private:
-    std::string description;
     double frequency;
 };
 

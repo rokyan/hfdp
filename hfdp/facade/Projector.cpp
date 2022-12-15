@@ -1,32 +1,30 @@
 #include "Projector.hpp"
 
-#include <iostream>
-
 namespace hfdp::facade
 {
 
 Projector::Projector(const std::string& description)
-    : description(description)
+    : Appliance(description)
 {}
 
 void Projector::on()
 {
-    std::cout << description << " " << "on" << std::endl;
+    print("on");
 }
 
 void Projector::off()
 {
-    std::cout << description << " " << "off" << std::endl;
+    print("on");
 }
 
 void Projector::wideScreenMode()
 {
-    std::cout << description << " " << "in widescreen mode (16x9 aspect ratio)" << std::endl;
+    print("in widescreen mode (16x9 aspect ratio)");
 }
 
 void Projector::tvMode()
 {
-    std::cout << description << " " << "in tv mode (4x3 aspect ratio)" << std::endl;
+    print("in tv mode (4x3 aspect ratio)");
 }
 
 } // namespace hfdp::facade

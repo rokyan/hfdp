@@ -1,27 +1,25 @@
 #include "PopcornPopper.hpp"
 
-#include <iostream>
-
 namespace hfdp::facade
 {
 
 PopcornPopper::PopcornPopper(const std::string& description)
-    : description(description)
+    : Appliance(description)
 {}
 
 void PopcornPopper::on()
 {
-    std::cout << description << " " << "on" << std::endl;
+    print("on");
 }
 
 void PopcornPopper::off()
 {
-    std::cout << description << " " << "off" << std::endl;
+    print("off");
 }
 
 void PopcornPopper::pop()
 {
-    std::cout << description << " " << "popping popcorn!" << std::endl;
+    print("popping popcorn!");
 }
 
 } // namespace hfdp::facade

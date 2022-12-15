@@ -1,56 +1,52 @@
 #include "CdPlayer.hpp"
 
-#include <iostream>
-
 namespace hfdp::facade
 {
 
 CdPlayer::CdPlayer(const std::string& description)
-    : description(description)
+    : Appliance(description)
 {}
 
 void CdPlayer::on()
 {
-    std::cout << description << " on" << std::endl;
+    print("on");
 }
 
 void CdPlayer::off()
 {
-    std::cout << description << " off" << std::endl;
+    print("off");
 }
 
 void CdPlayer::eject()
 {
     title = "";
-
-    std::cout << description << " eject" << std::endl;
+    print("eject");
 }
 
 void CdPlayer::play(const std::string& title)
 {
     this->title = title;
     track = 0;
-    
-    std::cout << description << " playing " << title << std::endl;
+
+    print("playing", title);
 }
 
 void CdPlayer::play(int track)
 {
     this->track = track;
-
-    std::cout << description << " playing track " << track << std::endl;
+    print("playing track", track);
 }
 
 void CdPlayer::stop()
 {
     track = 0;
 
-    std::cout << description << " stopped" << std::endl;
+    print("stopped");
 }
 
 void CdPlayer::pause()
 {
-    std::cout << description << " paused " << title << std::endl;
+    print("paused");
 }
 
 } // namespace hfdp::facade

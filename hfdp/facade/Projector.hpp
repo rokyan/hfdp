@@ -1,11 +1,13 @@
 #pragma once
 
+#include "Appliance.hpp"
+
 #include <string>
 
 namespace hfdp::facade
 {
 
-class Projector
+class Projector final : public Appliance
 {
 public:
     Projector(const std::string& description);
@@ -15,9 +17,6 @@ public:
 
     void wideScreenMode();
     void tvMode();
-
-private:
-    std::string description;
 };
 
 } // namespace hfdp::facade

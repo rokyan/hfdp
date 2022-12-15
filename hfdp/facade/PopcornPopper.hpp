@@ -1,11 +1,13 @@
 #pragma once
 
+#include "Appliance.hpp"
+
 #include <string>
 
 namespace hfdp::facade
 {
 
-class PopcornPopper final
+class PopcornPopper final : public Appliance
 {
 public:
     PopcornPopper(const std::string& description);
@@ -13,9 +15,6 @@ public:
     void on();
     void off();
     void pop();
-
-private:
-    std::string description;
 };
 
 } // namespace hfdp::facade
