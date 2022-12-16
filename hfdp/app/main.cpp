@@ -14,14 +14,14 @@ void run_demo(const hfdp::Demo&);
 
 int main()
 {
-    //run_demo(hfdp::StrategyDemo{});
-    //run_demo(hfdp::ObserverDemo{});
-    //run_demo(hfdp::DecoratorDemo{});
-    //run_demo(hfdp::FactoryMethodDemo{});
-    //run_demo(hfdp::AbstractFactoryDemo{});
-    //run_demo(hfdp::SingletonDemo{});
-    //run_demo(hfdp::CommandDemo{});
-    //run_demo(hfdp::AdapterDemo{});
+    run_demo(hfdp::StrategyDemo{});
+    run_demo(hfdp::ObserverDemo{});
+    run_demo(hfdp::DecoratorDemo{});
+    run_demo(hfdp::FactoryMethodDemo{});
+    run_demo(hfdp::AbstractFactoryDemo{});
+    run_demo(hfdp::SingletonDemo{});
+    run_demo(hfdp::CommandDemo{});
+    run_demo(hfdp::AdapterDemo{});
     run_demo(hfdp::FacadeDemo{});
 
     return 0;
