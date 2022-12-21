@@ -10,6 +10,7 @@ Examples from "Head First Design Patterns" - C++ version.
 * Classes should be open for extension, but closed for modification.
 * Depend on abstraction. Do not depend on concrete classes.
 * Principle of least knowledge: talk only to your friends.
+* Don't call us, we'll call you.
 
 ## Patterns
 
@@ -30,3 +31,5 @@ Examples from "Head First Design Patterns" - C++ version.
 *Adapter* - converts the interface of a class into another interface clients expect. Lets classes work together that couldn't otherwise because of incompatible interfaces.
 
 *Facade* - provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the substem easier to use.
+
+*Template method* - define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
