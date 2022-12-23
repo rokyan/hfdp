@@ -18,7 +18,7 @@ void IteratorDemo::run() const
     std::unique_ptr<Menu> cafeMenu = std::make_unique<CafeMenu>();
     std::unique_ptr<Menu> dinerMenu = std::make_unique<DinerMenu>();
 
-    Waitress waitress(std::move(pancakeHouseMenu), std::move(cafeMenu), std::move(dinerMenu));
+    Waitress waitress(std::move(pancakeHouseMenu), std::move(dinerMenu), std::move(cafeMenu));
 
     waitress.printMenu();
 }
