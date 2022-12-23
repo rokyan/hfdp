@@ -5,7 +5,7 @@
 namespace hfdp
 {
 
-class ObserverDemo final : public Demo
+class IteratorDemo final : public Demo
 {
 public:
     virtual void run() const override;
