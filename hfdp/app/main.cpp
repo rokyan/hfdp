@@ -7,7 +7,8 @@
 #include "../command/CommandDemo.hpp"
 #include "../adapter/AdapterDemo.hpp"
 #include "../facade/FacadeDemo.hpp"
-#include "../template_method/TemplateMethodDemo.hpp"
+#include "../templatemethod/TemplateMethodDemo.hpp"
+#include "../iterator/IteratorDemo.hpp"
 
 #include <iostream>
 
@@ -25,6 +26,7 @@ int main()
     run_demo(hfdp::AdapterDemo{});
     run_demo(hfdp::FacadeDemo{}); 
     run_demo(hfdp::TemplateMethodDemo{});
+    run_demo(hfdp::IteratorDemo{});
 
     return 0;
 }
