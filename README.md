@@ -12,6 +12,7 @@ Examples from "Head First Design Patterns" - C++ version.
 * Depend on abstraction. Do not depend on concrete classes.
 * Principle of least knowledge: talk only to your friends.
 * Don't call us, we'll call you.
+* A class should have only one reason to change.
 
 ## Patterns
 
@@ -34,3 +35,7 @@ Examples from "Head First Design Patterns" - C++ version.
 *Facade* - provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the substem easier to use.
 
 *Template method* - define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+
+*Iterator* - provide a way to access the elements of an aggregate object sequentially without exposing its underlying implementation.
+
+*Composite* - compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
