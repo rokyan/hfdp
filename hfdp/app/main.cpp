@@ -9,6 +9,7 @@
 #include "../facade/FacadeDemo.hpp"
 #include "../templatemethod/TemplateMethodDemo.hpp"
 #include "../iterator/IteratorDemo.hpp"
+#include "../composite/CompositeDemo.hpp"
 
 #include <iostream>
 
@@ -27,6 +28,7 @@ int main()
     run_demo(hfdp::FacadeDemo{}); 
     run_demo(hfdp::TemplateMethodDemo{});
     run_demo(hfdp::IteratorDemo{});
+    run_demo(hfdp::CompositeDemo{});
 
     return 0;
 }
