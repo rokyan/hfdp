@@ -41,3 +41,5 @@ Examples from "Head First Design Patterns" - C++ version.
 *Composite* - compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 
 *State* - allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+*Proxy* - provide a surrogate or placeholder for another object to control access to it.
